@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <script src='jquery-3.5.1.min.js'></script>
+    </head>
+    <input type="number" id="demo1">
+    <input type="number" id="demo2">
+    <button onclick="myFunctionNew( $('#demo1').val(), $('#demo2').val(), 'jam')">Try</button>
+    <button onclick="myFunctionNew( document.getElementById('demo1').value,document.getElementById('demo2').value, 'zarb')">Try.multi</button>
+    <button onclick="myFunctionNew( document.getElementById('demo1').value,document.getElementById('demo2').value, 'taghsim')">Try.divid</button>
+    <button onclick="myFunctionNew( document.getElementById('demo1').value,document.getElementById('demo2').value, 'menha')">Try.minus</button>
+   
+
+    <div id="demo3"></div>
+    <script>
+    function myFunctionNew(a,b,c){
+        var r;
+        /*if (c=='jam') {
+            r = parseInt(a)+parseInt(b)
+        }
+        else if (c=='menha') {
+            r = parseInt(a)-parseInt(b)    
+        }
+        else if (c=='zarb') {
+             r = parseInt(a)*parseInt(b)    
+        }
+        else if (c=='taghsim') {
+            r = parseInt(a)/parseInt(b)    
+        }*/
+        switch(c) {
+            case 'jam': r = parseInt(a)+parseInt(b); break;
+            case 'menha': r = parseInt(a)-parseInt(b); break;
+            case 'zarb': r = parseInt(a)*parseInt(b); break;
+            case 'taghsim': r = parseInt(a)/parseInt(b); break;
+        }
+        document.getElementById("demo3").innerHTML = r
+    }
+    </script>
+    
+</html>
