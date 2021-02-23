@@ -1,0 +1,26 @@
+<html>
+    <h1>average</h1>
+        <body>
+<input type='text' id='demo1'>
+<button onclick="myFunction()">add</button>
+<div id="demo3"></div>
+<button onclick="myFunction2()">average</button>
+<script>
+    var marks=[];
+function myFunction(){
+    
+    
+    marks.push(parseInt(document.getElementById('demo1').value));
+    document.getElementById('demo3').innerHTML=marks;
+    document.getElementById('demo1').value="";
+}
+function myFunction2(){
+    var sum=0;
+    for(i=0; i<marks.length; i++) {
+         sum=marks[i]+sum
+         
+    }
+   alert(sum/marks.length);
+}
+</script>
+
