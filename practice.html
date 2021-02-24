@@ -1,0 +1,34 @@
+<html>
+    <h1>ssss</h1>
+    <body>
+       <h4>name</h4> 
+        <input id="demo1">
+        <h4>last name</h4>
+        <input id="demo2">
+        <h4>enter your mark</h4> 
+        <label>enter your mark</label>
+        <input id="demo3">
+        <button onclick="myFunction0()">add</button>
+        <button onclick="myFunction1()">get average</button>
+        <button onclick="myFunction2()">get max</button>
+        <div id="demo5"></div>
+        <div id="demo6"></div>
+        <script>
+            var mark=[];
+            function myFunction0(){
+                mark.push(parseInt(document.getElementById('demo3').value));
+                document.getElementById('demo5').innerHTML=mark;  
+            }
+            function myFunction1(){
+                var sum=0
+                for(i=0; i<mark.length; i++) { 
+                    sum=sum+mark[i]
+                }
+                getaverage=sum/mark.length
+                document.getElementById('demo6').innerHTML=getaverage;  
+            }
+        </script>
+
+
+    </body>zzz
+</html>
