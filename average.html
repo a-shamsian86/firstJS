@@ -2,14 +2,13 @@
     <h1>average</h1>
         <body>
 <input type='text' id='demo1'>
-<button onclick="myFunction()">add</button>
+<button onclick="addMark()">add</button>
 <div id="demo3"></div>
 <button onclick="myFunction2()">average</button>
 <script>
     var marks=[];
-function myFunction(){
-    
-    
+function addMark(){
+    //Hi Ati jan khoobi
     marks.push(parseInt(document.getElementById('demo1').value));
     document.getElementById('demo3').innerHTML=marks;
     document.getElementById('demo1').value="";
