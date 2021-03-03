@@ -1,0 +1,22 @@
+<html>
+
+    <body>
+        <input id="courses" type='text'>
+        <button onclick="generateinputs()">click</button>
+        <div id="demo"></div>
+        <script>
+            var x=[];
+            function generateinputs(){
+                x = document.getElementById("courses").value.split(",");
+                console.log(x)
+
+                for(i=0; i<x.length; i++){
+                    var newinput=document.createElement("input")
+                    newinput.setAttribute("id" , x[i])
+                    document.getElementById('demo').append(newinput)
+                }
+
+            }
+        </script>
+    </body>
+</html>
